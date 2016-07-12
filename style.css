@@ -343,7 +343,7 @@ html {
 }
 
 body {
-  background: #fff;
+  background: #f7f7f7;
   /* Fallback for when there is no custom background color defined. */
 }
 
@@ -362,11 +362,11 @@ hr {
 }
 
 ul, ol {
-  margin: 0 0 1.5em 3em;
+  padding: 0;
 }
 
 ul {
-  list-style: disc;
+  list-style: none;
 }
 
 ol {

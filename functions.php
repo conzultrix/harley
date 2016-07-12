@@ -123,6 +123,19 @@ function harley_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+	
+	if (is_front_page()) {
+		// deregister default jQuery included with Wordpress
+		wp_deregister_script( 'jquery' );
+		$jquery_cdn = 'https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js';
+		wp_enqueue_script( 'jquery', $jquery_cdn, array(), '3.0.0', true );
+		
+		// add owl-carousel
+		wp_enqueue_script('slick', get_template_directory_uri() . '/js/zippy.js', array(), '1.3.3', true );
+		wp_enqueue_script('carousel', get_template_directory_uri() . '/js/carousel.js', array(), '1.3.3', true );
+		wp_enqueue_style('carousel', get_template_directory_uri() . '/libs/carousel/carousel.css', false, '1.6.1', 'all' );
+	}
+	
 }
 add_action( 'wp_enqueue_scripts', 'harley_scripts' );
 
