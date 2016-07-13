@@ -14,13 +14,13 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="constrained">
+		<div class="l-constrained">
 			<div class="site-info">
 				<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'harley' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'harley' ), 'WordPress' ); ?></a>
 				<span class="sep"> | </span>
 				<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'harley' ), 'harley', '<a href="http://eseosaaigbogun.com" rel="designer">Eseosa Aigbogun</a>' ); ?>
 			</div><!-- .site-info -->
-		</div><!-- .constrained -->
+		</div><!-- .l-constrained -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
