@@ -34,7 +34,7 @@
 			</div><!-- .l-connections -->
 			
 			<div class="l-copyright">
-				<div class="copyright">&#169; Copyright 2016 <a href="http://www.conzultrix.com">Conzultrix</a>. All Rights Reserved</div>
+				<div class="copyright">&#169; Copyright <?php echo date('Y'); ?> <a href="http://www.conzultrix.com">Conzultrix</a>. All Rights Reserved</div>
 			</div><!-- .l-copyright -->
 		</div><!-- .l-constrained -->
 	</footer><!-- #colophon -->
