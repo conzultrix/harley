@@ -32,5 +32,19 @@ get_header(); ?>
 			</main><!-- #main -->
 		</div><!-- .constrained -->
 	</div><!-- #primary -->
+	
+	<div class="highlights">
+		<div class="constrained">
+			<?php $query = new WP_Query( array( 'post_type' => 'trix_highlight', 'orderby' => 'date', 'order' => 'ASC' ) ); ?>
+			<?php print_r($query); ?>
+				<ul class="highlight">
+					<?php while ( $query->have_posts() ) : $query->the_post(); ?>
+							
+						<?php get_template_part( 'template-parts/content', 'highlight' ); ?>
+								
+					<?php endwhile; ?>
+				</ul>
+		</div><!-- .constrained -->
+	</div><!-- .highlights -->
 
 <?php get_footer(); ?>
