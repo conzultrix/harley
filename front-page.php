@@ -33,9 +33,9 @@ get_header(); ?>
 		</div><!-- .l-constrained -->
 	</div><!-- #primary -->
 	
-	<div class="postfix">
+	<div class="l-postscript">
 		<div class="l-constrained">
-			<div class="highlight">
+			<section class="highlight">
 			<?php $query = new WP_Query( array( 'post_type' => 'trix_highlight', 'orderby' => 'date', 'order' => 'ASC' ) ); ?>
 				<ul class="highlight">
 					<?php while ( $query->have_posts() ) : $query->the_post(); ?>
@@ -48,8 +48,8 @@ get_header(); ?>
 				<div class="cta">
 					<a href="#" class="btn btn-demo">Request a Demo</a>
 				</div>
-			</div> <!-- .highlight -->
+			</section> <!-- .highlight -->
 		</div><!-- .l-constrained -->
-	</div><!-- .postfix-->
+	</div><!-- .l-postscript-->
 
 <?php get_footer(); ?>

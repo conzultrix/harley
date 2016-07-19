@@ -11,3 +11,37 @@
   margin: 0 auto;
   @include background-grid;
 }
+
+.l-main,
+.l-postscript,
+.l-footer {
+  margin-bottom: $vert-spacing-unit;
+}
+
+
+@include breakpoint($tab) { // At a given Susy Media Layout, use a given amount of columns.
+ 
+  .l-app-summary {
+    padding-left: 33.3333333%;
+  }
+  
+  .l-app-features {
+    @include grid-span(4,1);
+  }
+  
+  .l-app-details {
+    @include grid-span(8,5);
+  }
+  .l-footer {
+    clear: both;
+  }
+  
+  .l-connections {
+    @include grid-span(4,9);
+  }
+  
+  .l-copyright {
+    @include grid-span(8,1);
+  }
+  
+}
