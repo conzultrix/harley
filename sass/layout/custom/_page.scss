@@ -22,7 +22,8 @@
 @include breakpoint($tab) { // At a given Susy Media Layout, use a given amount of columns.
  
   .l-app-summary {
-    padding-left: 33.3333333%;
+    //padding-left: 33.3333333%;
+    padding-left: 33.9933333%;
   }
   
   .l-app-features {
